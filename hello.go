@@ -1,18 +1,31 @@
 package main
 
 import "fmt"
-import "rsc.io/quote"
+import "hello/tinhtong"
 
+type Person struct {
+	name string
+	age int
+}
 func main() {
-	fmt.Println("Hello")
-	variable()
-	fmt.Println(calculateBill(1000, 21))
-	fmt.Println(quote.Go())
+	//fmt.Println("Hello")
+	//variable()
+	//fmt.Println(calculateBill(1000, 21))
+	//fmt.Println(quote.Go())
+	fmt.Println(demoPerson())
+	fmt.Println(tinhtong.Sum(10, 22))
+}
+func demoPerson() Person {
+	ha := Person {
+		name: "Hoang Anh",
+		age:  23,
+	}
+
+	return ha
 }
 
 func variable() {
-	var age int
-	age = 21
+	age := 21
 	fmt.Println("my age is", age)
 	name, age := "naveen", 90
 
