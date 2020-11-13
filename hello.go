@@ -1,11 +1,13 @@
 package main
 
 import "fmt"
+import "rsc.io/quote"
 
 func main() {
 	fmt.Println("Hello")
 	variable()
 	fmt.Println(calculateBill(1000, 21))
+	fmt.Println(quote.Go())
 }
 
 func variable() {
